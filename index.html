@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>   
+    </header>
+    <main class="elementos">
+        <div>
+            <h1 class="logo">
+                <img src="./assets/Logo.png"  alt="Logo de ALURA">         
+            </h1>
+            <textarea class="elemento_respuesta" type="text" id="valorUsuario" placeholder="Ingrese el texto aquí"></textarea>
+            <div id="alert" class="elemento_alert">
+                !! Solo letras minúsculas y sin acentos.
+            </div>
+
+            <section class="elementos_alineacion_botones">
+                <button class="estilo-Boton" id="encriptarBoton" onclick="encriptador();">Encriptar !</button> 
+                <button class="estilo-Boton" id="desencriptarBoton" onclick="desencriptador();">Desencriptar !</button>  
+            </section>
+        </div>            
+
+        <div>
+            <section class="copiar_Contenido" >
+                <div class="respuesta" id="respuesta"></div>
+                <div class="vacio_formato"  id="vacio">
+                    <img class="imagen_d" src="./assets/Muneco.png"  alt="Imagen de una persona observando un diamante a traves de una lupa"> 
+                    <p class="parrafo_Uno">Ningun mensaje fue encontrado</p>
+                    <p class="parrafo_Dos">Ingrese el texto que desee encriptar o desencriptar</p>
+                </div>
+                    <div class="vacio_formato_boton"  id="vacioBoton"></div>
+                    <button class="estilo-Boton" id="copiarBoton" onclick="copiar();">Copiar</button>
+                </div>
+            </section>    
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Alura Challenges ONE. Desarrollado por Diana Yolotzin.</p>
+    </footer>
+
+    
+</body>
+    <script src="encriptador.js"></script>
+</html>

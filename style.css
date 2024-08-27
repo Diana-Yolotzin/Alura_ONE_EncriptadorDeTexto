@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #cdb4db;
+    font-family: "Inter", sans-serif;
+    height: 100%;
+    font-weight: 400;
+}
+
+main {
+    flex: 1;
+}
+
+.elementos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3% 5%;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 0 0 5% 0;
+}
+
+.elemento_respuesta {
+    background-color: #cdb4db;
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 650px;
+    height: 350px;
+    font-size: 2rem;
+    color: #0A3871;
+}
+
+.elemento_alert {
+    padding: 1% 0 6% 4%;
+    font-size: 0.75rem;
+    color: #495057;
+    width: 100%;
+    max-width: 700px;
+    height: 20px;
+}
+
+.elementos_alineacion_botones {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.estilo-Boton {
+    width: 100%;
+    max-width: 328px;
+    text-align: center;
+    padding: 24px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+#encriptarBoton {
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+#encriptarBoton:hover {
+    background-color: #0077b6;
+}
+
+#desencriptarBoton {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+#desencriptarBoton:hover {
+    background-color: #a2d2ff;
+}
+
+.copiar_Contenido {
+    background-color: #FFC8DD;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 550px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.respuesta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.parrafo_Uno {
+    font-size: 1.5rem;
+}
+
+.parrafo_Dos {
+    font-size: 1rem;
+}
+
+.vacio_formato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#copiarBoton {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+#copiarBoton:hover {
+    background-color: #a2d2ff;
+}
+
+.footer {
+    background-color: #FFC8DD;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    color: #e27396;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .elementos {
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 5% 4.5%;
+    }
+
+    .elemento_alert {
+        padding: 1% 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .elementos {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2%;
+    }
+
+    .elemento_respuesta {
+        font-size: 1.5rem;
+        height: auto;
+    }
+
+    .elemento_alert {
+        padding: 2%;
+        font-size: 0.65rem;
+    }
+
+    .estilo-Boton {
+        padding: 15px;
+        font-size: 0.875rem;
+    }
+
+    .copiar_Contenido {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .respuesta {
+        font-size: 0.875rem;
+    }
+
+    .parrafo_Uno {
+        font-size: 1.25rem;
+    }
+
+    .parrafo_Dos {
+        font-size: 0.875rem;
+    }
+
+    .vacio_formato {
+        gap: 10px;
+    }
+}
